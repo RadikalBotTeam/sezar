@@ -61,7 +61,7 @@ local function get_weather(location)
 	local weather = json:decode(b)
 	local city = weather.name
 	local country = weather.sys.country
-	local temp = 'دمای شهر '..city..' هم اکنون '..weather.main.temp..' درجه سانتی گراد می باشد\n____________________\n @MahDiRoO :)'
+	local temp = 'دمای شهر '..city..' هم اکنون '..weather.main.temp..' درجه سانتی گراد می باشد\n____________________\n @sezarinfo :)'
 	local conditions = 'شرایط فعلی آب و هوا : '
 	if weather.weather[1].main == 'Clear' then
 		conditions = conditions .. 'آفتابی☀'
@@ -83,7 +83,7 @@ local function calc(exp)
 	b,c = http.request(url)
 	text = nil
 	if c == 200 then
-    text = 'Result = '..b..'\n____________________\n @MahDiRoO :)'
+    text = 'Result = '..b..'\n____________________\n @sezarinfo :)'
 	elseif c == 400 then
 		text = b
 	else
@@ -143,7 +143,7 @@ function run(msg, matches)
 		text = text..'\nغروب آفتاب: '..data.Sunset
 		text = text..'\nاذان مغرب: '..data.Maghrib
 		text = text..'\nعشاء : '..data.Isha
-		text = text..'\n@MahDiRoO\n'
+		text = text..'\n@sezarinfo\n'
 		return tdcli.sendMessage(msg.chat_id_, 0, 1, text, 1, 'html')
 	end
 --------------------------------
@@ -184,7 +184,7 @@ function run(msg, matches)
 					local pfile = 'data/photos/'..file..'.webp'
 					if file_exi(file..'_(1).jpg', tcpath..'/data/photo', 'jpg') then
 						os.rename(pathf, pfile)
-						tdcli.sendDocument(msg.chat_id_, 0, 0, 1, nil, pfile, '@MahDiRoO', dl_cb, nil)
+						tdcli.sendDocument(msg.chat_id_, 0, 0, 1, nil, pfile, '@sezarinfo', dl_cb, nil)
 					else
 						tdcli.sendMessage(msg.to.id, msg.id_, 1, '_This photo does not exist. Send photo again._', 1, 'md')
 					end
@@ -254,7 +254,7 @@ end
 		local opizo = http.request('http://api.gpmod.ir/shorten/?url='..URL.escape(shortlink)..'&username=mersad565@gmail.com')
 		local u2s = http.request('http://u2s.ir/?api=1&return_text=1&url='..URL.escape(shortlink))
 		local llink = http.request('http://llink.ir/yourls-api.php?signature=a13360d6d8&action=shorturl&url='..URL.escape(shortlink)..'&format=simple')
-		local text = ' 🌐لینک اصلی :\n'..check_markdown(data.data.long_url)..'\n\nلینکهای کوتاه شده با 6 سایت کوتاه ساز لینک : \n》کوتاه شده با bitly :\n___________________________\n'..check_markdown(data.data.url)..'\n___________________________\n》کوتاه شده با yeo :\n'..check_markdown(yeo)..'\n___________________________\n》کوتاه شده با اوپیزو :\n'..check_markdown(opizo)..'\n___________________________\n》کوتاه شده با u2s :\n'..check_markdown(u2s)..'\n___________________________\n》کوتاه شده با llink : \n'..check_markdown(llink)..'\n___________________________\n》لینک کوتاه شده با yon : \nyon.ir/'..check_markdown(jdat.output)..'\n____________________\n @MahDiRoO :)'
+		local text = ' 🌐لینک اصلی :\n'..check_markdown(data.data.long_url)..'\n\nلینکهای کوتاه شده با 6 سایت کوتاه ساز لینک : \n》کوتاه شده با bitly :\n___________________________\n'..check_markdown(data.data.url)..'\n___________________________\n》کوتاه شده با yeo :\n'..check_markdown(yeo)..'\n___________________________\n》کوتاه شده با اوپیزو :\n'..check_markdown(opizo)..'\n___________________________\n》کوتاه شده با u2s :\n'..check_markdown(u2s)..'\n___________________________\n》کوتاه شده با llink : \n'..check_markdown(llink)..'\n___________________________\n》لینک کوتاه شده با yon : \nyon.ir/'..check_markdown(jdat.output)..'\n____________________\n @sezarinfo :)'
 		return tdcli.sendMessage(msg.chat_id_, 0, 1, text, 1, 'html')
 	end
 --------------------------------
@@ -299,7 +299,7 @@ end
 		local url = "https://assets.imgix.net/examples/clouds.jpg?blur=150&w="..w.."&h="..h.."&fit=crop&txt="..eq.."&txtsize="..txtsize.."&txtclr="..txtclr.."&txtalign=middle,center&txtfont=Futura%20Condensed%20Medium&mono=ff6598cc"
 		local receiver = msg.to.id
 		local  file = download_to_file(url,'text.jpg')
-		tdcli.sendPhoto(msg.to.id, 0, 0, 1, nil, file, "@MahDiRoO", dl_cb, nil)
+		tdcli.sendPhoto(msg.to.id, 0, 0, 1, nil, file, "@sezarinfo", dl_cb, nil)
 	end
 
 end
@@ -350,4 +350,4 @@ return {
 	run = run,
 	}
 
---#by @MahDiRoO :)
+--#by @sezarinfo :)
