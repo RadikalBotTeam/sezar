@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd $HOME/MaTaDoR
+cd $HOME/sezar
 
 install() {
 	    cd tg
