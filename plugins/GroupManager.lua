@@ -1,4 +1,4 @@
---Begin GroupManager.lua By @MahDiRoO
+--Begin GroupManager.lua By @sezarinfo
 local function modadd(msg)
 local hash = "gp_lang:"..msg.to.id
 local lang = redis:get(hash)
@@ -3546,7 +3546,7 @@ end
 
 if matches[1] == "راهنما" and is_mod(msg) then
 text = [[
-🔖*мαTdσя TG*
+🔖*sezarbot TG*
 
 ⚡️*برای دیدن دستورات مورد نظر خود ، مورد دلخواه را ارسال کنید*
 
@@ -3574,15 +3574,15 @@ _برای تغییر زبان_
  *تنظیم زبان* `[فارسی , انگلسیی]`
 
 *〰〰〰〰〰〰〰〰〰*
-🎭*pwered вy :* @MahDiRoO
-💢*cнαɴɴel :* @MaTaDoRTeaM
+🎭*pwered вy :* @ariasudo
+💢*cнαɴɴel :* @sezarinfo
 ]]
 return text
 end
 
 if matches[1] == "help" and is_mod(msg) or matches[1] == "Help" and is_mod(msg)then
 text = [[
-🔖*мαTdσя TG*
+🔖*sezarbot TG*
 
 ⚡️*тo ѕee тнe coммαɴdѕ oғ yoυr deѕιred ιтeм ѕυвмιт*
 
@@ -3609,15 +3609,15 @@ _To Change The LanGuage_
 *Setlang* `[en , fa]`
 
 *〰〰〰〰〰〰〰〰〰*
-🎭*pwered вy :* @MahDiRoO
-💢*cнαɴɴel :* @MaTaDoRTeaM
+🎭*pwered вy :* @ariasudo
+💢*cнαɴɴel :* @sezarinfo
 ]]
 return text
 end
 
 if matches[1] == "sudohelp" and is_mod(msg) or  matches[1] == "Sudohelp" and is_mod(msg) or  matches[1] == "راهنمای صاحب" and is_mod(msg) then
 text = [[
-⚜*мαTdσя TG*
+⚜*sezarbot TG*
 
 *Visudo* `[username|id|reply]`
 🔹_اضافه کردن سودو_
@@ -3724,8 +3724,8 @@ text = [[
 *موفق باشید ;)*
 
 *〰〰〰〰〰〰〰〰〰*
-🎭*pwered вy :* @MahDiRoO
-💢*cнαɴɴel :* @MaTaDoRTeaM
+🎭*pwered вy :* @ariasudo
+💢*cнαɴɴel :* @sezarinfo
 
 ]]
 return text
@@ -3759,8 +3759,8 @@ text = [[
 _To Change The LanGuage_ `[Setlang]` `[en , fa]`
 
 *〰〰〰〰〰〰〰〰〰*
-🎭*pwered вy :* @MahDiRoO
-💢*cнαɴɴel :* @MaTaDoRTeaM
+🎭*pwered вy :* @ariasudo
+💢*cнαɴɴel :* @sezarinfo
  ]]
 return text
 end
@@ -3793,8 +3793,8 @@ if matches[1] == "راهنمای قفلی" and is_mod(msg) then
 _برای تغییر زبان_ `[تنظیم زبان]` `[فارسی , انگلسیی]`
 
 *〰〰〰〰〰〰〰〰〰*
-🎭*pwered вy :* @MahDiRoO
-💢*cнαɴɴel :* @MaTaDoRTeaM
+🎭*pwered вy :* @ariasudo
+💢*cнαɴɴel :* @sezarinfo
 ]]
 return text
 end
@@ -3899,8 +3899,8 @@ text = [[
 _To Change The LanGuage_ `[Setlang]` `[en , fa]`
 
 *〰〰〰〰〰〰〰〰〰*
-🎭*pwered вy :* @MahDiRoO
-💢*cнαɴɴel :* @MaTaDoRTeaM
+🎭*pwered вy :* @ariasudo
+💢*cнαɴɴel :* @sezarinfo
 ]]
 return text
 end
@@ -4002,8 +4002,8 @@ text = [[
 _برای تغییر زبان_ `[تنظیم زبان]` `[فارسی , انگلسیی]`
 
 *〰〰〰〰〰〰〰〰〰*
-🎭*pwered вy :* @MahDiRoO
-💢*cнαɴɴel :* @MaTaDoRTeaM
+🎭*pwered вy :* @ariasudo
+💢*cнαɴɴel :* @sezarinfo
 ]]
 return text
 end
@@ -4066,8 +4066,8 @@ _Tr en سلام_
 _To Change The LanGuage_ `[Setlang]` `[en , fa]`
 
 *〰〰〰〰〰〰〰〰〰*
-🎭*pwered вy :* @MahDiRoO
-💢*cнαɴɴel :* @MaTaDoRTeaM
+🎭*pwered вy :* @ariasudo
+💢*cнαɴɴel :* @sezarinfo
 ]]
 return text
 end
@@ -4130,8 +4130,8 @@ _ترجمه en سلام_
 _برای تغییر زبان_ `[تنظیم زبان]` `[فارسی , انگلسیی]`
 
 *〰〰〰〰〰〰〰〰〰*
-🎭*pwered вy :* @MahDiRoO
-💢*cнαɴɴel :* @MaTaDoRTeaM
+🎭*pwered вy :* @ariasudo
+💢*cнαɴɴel :* @sezarinfo
 ]]
 return text
 end
@@ -4139,7 +4139,7 @@ end
 if matches[1] == "nerkh" or matches[1] == "Nerkh" or matches[1] == "نرخ" then
 text = [[
 `💵 نرخ فروش گروه با ربات`
-*🔖мαтαdor тɢ 💤*
+*🔖sezarbot тɢ 💤*
 
 ✳️_برای گروه های زیر 1000 نفر ‌_
 `➰1 ماهه  5 هزار تومان`
@@ -4168,9 +4168,9 @@ text = [[
 3⃣._ربات داعمی نداریم به علت کیفیت و کارای بالای ربات._
 *________________*
 *برای خرید به ایدی زیر مراجعه کنید :*
-🆔: @MahDiRoO
+🆔: @ariasudo
 *و اگر ریپورت هستید به :*
-🆔: @MahDiRoO`_`BoT
+🆔: @sezarbvbot
 ]]
 return text
 end
