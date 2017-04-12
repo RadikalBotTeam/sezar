@@ -1,4 +1,4 @@
---Start by MahDiRoO :)
+--Start by @sezarinfo :)
 do
 
 local function matador(msg, matches)
@@ -29,5 +29,5 @@ return {
   run = matador
 }
 end
---@MahDiRoO
---@MaTaDoRTeaM
+--@ariasudo
+--@sezarinfo
