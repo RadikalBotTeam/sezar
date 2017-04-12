@@ -4177,7 +4177,7 @@ end
 
 if matches[1] == "ping" or matches[1] == "Ping" or matches[1] == "انلاینی" then
 text = [[
-ρøиg
+انـلاینم و حـواسم بـه گـروه هسـت
 ]]
 return text
 end
