@@ -106,13 +106,13 @@ function create_config( )
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
-    info_text = [[» MaTaDoR v5.2
+    info_text = [[» sezar v5.2
 		
 		»Sudo BoT :
-		» @MahDiRoO
+		» @ariasudo
 		
         
-		v5 https://github.com/MaTaDoRrOo/MaTaDoR
+		v5 https://github.com/asgharghasemi/sezar
 GoOd luck ;))
 ]],
   }
